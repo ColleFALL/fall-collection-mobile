@@ -1,11 +1,13 @@
 {
   "expo": {
-    "name": "fall-collection",
+    "name": "FC Fall Collection",
     "slug": "fall-collection",
+    "scheme": "fallcollection",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0a0a0a",
     "ios": {
       "supportsTablet": true
     },
@@ -15,10 +17,24 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.collefall.fallcollection"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "40bd8223-bd85-4bb0-ba30-0349a7d25521"
+      }
     }
   }
 }
